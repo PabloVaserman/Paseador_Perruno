@@ -2,32 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.circulo {
+  width: 700px;
+  height: 700px;
+  margin-top: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-wap {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right:30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+ 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.whatsapp-icon {
+  transition: filter 0.3s;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn-wap:hover .whatsapp-icon {
+  filter: invert(100%) saturate(100%) brightness(100%);
+}
+
+.margen-logo {
+  margin-top: 780px;
+}
+
+.margen-perro {
+  margin-left: 890px;
+}
+
+.tope-gaspar {
+  top: 660px;
 }
